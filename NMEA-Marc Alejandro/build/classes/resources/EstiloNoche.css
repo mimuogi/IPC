@@ -1,0 +1,63 @@
+.root {
+            -fx-font-size: 12pt;
+ 
+	   -fx-font-colour: white;
+	   -fx-base: rgb(0, 0, 0);
+  
+	   -fx-background: rgb(0, 0, 0);
+}
+.button {
+    
+    -fx-background-color: rgb(20,20,20);
+    -fx-background-radius: 0%;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,255) , 5,0,0,2 );
+    
+}
+
+.button:hover{
+    -fx-background-color: darkgrey;
+    
+}
+.modo {
+     -fx-background-radius: 75%;
+}
+
+
+.label {
+    -fx-font-size: 22px;
+    -fx-font-family: "Trebuchet MS";
+    -fx-text-fill: whitesmoke;
+}
+.secondary{
+    -fx-font-size: 16px;
+}
+
+.slider .thumb {
+    -fx-background-color: white;
+}
+
+.result{
+    -fx-text-fill: rgb(89, 213, 247);
+   
+}
+
+.chart {
+            -fx-padding: 10px;
+	    -fx-create-symbols: false;
+
+}
+.axis {
+        -fx-stroke: whitesmoke;
+    }
+    .axis:bottom {
+        -fx-border-color: whitesmoke transparent transparent transparent;
+    }
+    .axis:left {
+        -fx-border-color: transparent whitesmoke transparent transparent;
+    }
+.chart-vertical-grid-lines {
+    -fx-stroke: rgba(234, 234, 234, 0.25);
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(234, 234, 234, 0.25);}
+.default-color0.chart-series-line{-fx-stroke: rgb(89, 213, 247);}

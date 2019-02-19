@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../resources/Estilos.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestoracademia.NuevoController">
+   <children>
+      <TabPane layoutX="-4.0" prefHeight="432.0" prefWidth="607.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Alumno">
+            <content>
+                  <GridPane alignment="CENTER" prefHeight="372.0" prefWidth="603.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="foto" fitHeight="162.0" fitWidth="203.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../resources/academialogo.png" />
+                           </image>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" textAlignment="CENTER" underline="true" wrappingWidth="201.447265625" GridPane.columnIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DNI:" textAlignment="CENTER" underline="true" wrappingWidth="202.185546875" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edad:" textAlignment="CENTER" underline="true" wrappingWidth="199.84375" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:" textAlignment="CENTER" underline="true" wrappingWidth="202.58203125" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="nombre" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Button fx:id="imagenUpload" mnemonicParsing="false" onAction="#uploadClick" prefHeight="42.0" prefWidth="158.0" text="Subir imagen" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+                        <TextField fx:id="dni" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="edad" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="direccion" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <Button fx:id="cancelar" mnemonicParsing="false" onAction="#cancelarClick" prefHeight="30.0" prefWidth="100.0" text="Cancelar" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Button fx:id="crearA" mnemonicParsing="false" onAction="#crearAClick" prefHeight="30.0" prefWidth="100.0" text="Crear" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                     </children>
+                  </GridPane>
+            </content>
+          </Tab>
+          <Tab text="Curso">
+            <content>
+                  <GridPane prefHeight="396.0" prefWidth="597.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Docente:" textAlignment="CENTER" underline="true" wrappingWidth="307.25" GridPane.rowIndex="1" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Plazas:" textAlignment="CENTER" underline="true" wrappingWidth="306.25" GridPane.rowIndex="2" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha inicio (aaaa-mm-dd):" textAlignment="CENTER" underline="true" wrappingWidth="305.25" GridPane.rowIndex="3" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha fin (aaaa-mm-dd):" textAlignment="CENTER" underline="true" wrappingWidth="302.25" GridPane.rowIndex="4" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hora (hh:mm):" textAlignment="CENTER" underline="true" wrappingWidth="302.25" GridPane.rowIndex="6" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aula:" textAlignment="CENTER" underline="true" wrappingWidth="304.25" GridPane.rowIndex="7" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del curso:" textAlignment="CENTER" underline="true" wrappingWidth="302.8984375" />
+                        <Button fx:id="crearC" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#crearCClick" prefHeight="40.0" prefWidth="100.0" text="Crear" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                        <Button fx:id="cancelarC" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelarClick" prefHeight="40.0" prefWidth="100.0" text="Cancelar" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                        <TextField fx:id="nombreCurso" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="docente" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="plazas" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="fechaInicio" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="fechaFin" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="hora" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="aula" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <HBox prefHeight="41.0" prefWidth="607.0" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                           <children>
+                              <RadioButton fx:id="lunes" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" text="Lunes">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets left="35.0" />
+                                 </HBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="martes" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" text="Martes">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="miercoles" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" text="Miercoles">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="jueves" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" text="Jueves">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="viernes" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" text="Viernes">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="sabado" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="75.0" text="Sábado">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                              <RadioButton fx:id="domingo" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="86.0" text="Domingo">
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </RadioButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <RadioButton layoutX="-158.0" layoutY="267.0" mnemonicParsing="false" text="RadioButton" />
+   </children>
+</AnchorPane>

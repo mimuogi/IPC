@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demonmea.VistaBarcoController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="79.0" prefWidth="465.0" spacing="30.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="HDG:">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="hdgLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="120.0" styleClass="result" text="--- º" textFill="#4f0fee">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="PITCH:">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="pitchLab" prefHeight="20.0" prefWidth="120.0" styleClass="result" text="--- º" textFill="#315f90" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Label text="ROLL:">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="rollLab" prefHeight="20.0" prefWidth="120.0" styleClass="result" text="--- º" textFill="#2d398a" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

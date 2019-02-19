@@ -1,0 +1,47 @@
+.root {
+            -fx-font-size: 12pt;
+ 
+	   -fx-font-colour: black;
+	   -fx-base: rgb(255, 255, 255);
+  
+	   -fx-background: rgb(255, 255, 255);
+}
+.label {
+    -fx-font-size: 22px;
+    -fx-font-family: "Trebuchet MS";
+}
+.secondary{
+    -fx-font-size: 16px;
+}
+
+.button {
+    
+    -fx-background-color: rgb(230, 230, 230);
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-background-radius: 0%;
+     -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 5,0,0,2);
+    
+}
+.modo {
+    
+     -fx-background-radius: 100%;
+    
+}
+
+.button:hover{
+    -fx-background-color: darkgrey;
+    
+}
+
+.result{
+    -fx-text-fill: blue;
+   
+}
+
+.chart {
+            -fx-padding: 10px;
+	    -fx-create-symbols: false;
+}
+
+.default-color0.chart-series-line{-fx-stroke: blue;}

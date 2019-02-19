@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="GestorAcademia.jnlp">
+  <information>
+    <title>GestorAcademia</title>
+    <vendor>Alejandro</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="GestorAcademia.jar" size="84579" download="eager" />
+    <jar href="lib\accesoaBD.jar" size="39697" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="GestorAcademia" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="gestoracademia.GestorAcademia"  name="GestorAcademia" />
+  <update check="always"/>
+</jnlp>
